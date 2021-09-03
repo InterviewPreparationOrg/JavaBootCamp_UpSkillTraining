@@ -3,7 +3,6 @@ package day02;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 
 public class StreamPractice {
@@ -17,9 +16,7 @@ public class StreamPractice {
         System.out.println(list);
 
         // add 5 to every single odd numbers in the list
-
         list = list.stream().map( e -> { if(e%2!=0) return e +5; return e; }).collect(Collectors.toList());
-
 
         System.out.println(list);
 
